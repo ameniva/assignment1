@@ -1,0 +1,152 @@
+/* ===== Google Font - Serif ===== */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Libre Baskerville', serif; /* elegant serif font */
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* ===== Wrapper Gradient ===== */
+.wrapper {
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,       /* white */
+        #e6e0f7 50%,      /* light purple */
+        #d1b3ff 100%      /* soft purple */
+    );
+    padding-bottom: 50px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+header h1 {
+    color: #6a0dad; /* deep purple */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+header p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #c9a3ff; /* light purple nav */
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+nav a {
+    text-decoration: none;
+    color: #4a148c; /* dark purple text */
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+nav a:hover {
+    color: #9c27b0;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* ===== Main Content ===== */
+main {
+    width: 70%;
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== Sections ===== */
+.content-section {
+    margin-bottom: 50px;
+}
+.content-section h2,
+.content-section h3 {
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+.content-section p,
+.content-section li,
+.content-section ol {
+    color: #333;
+    margin-bottom: 15px;
+}
+.content-section ol,
+.content-section ul {
+    margin-left: 20px;
+}
+
+/* ===== Gallery ===== */
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #f0e5ff; /* light purple gallery bg */
+    padding: 20px;
+    border-radius: 12px;
+}
+.picture {
+    width: 300px;
+    height: 400px;
+}
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(95%); /* NEW CSS property */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.picture img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+/* ===== Follow Links ===== */
+.content-section p a {
+    color: #6a0dad;
+    font-weight: 700;
+}
+.content-section p a:hover {
+    color: #9c27b0;
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    width: 70%;
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+footer p,
+footer address {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
